@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
-    <bean id="userMax" class="tech.poorguy.User"></bean>
-    <bean id="userPg" class="tech.poorguy.User"></bean>
+    <bean id="userMax" class="tech.poorguy.bean.User"></bean>
+    <bean id="userPg" class="tech.poorguy.bean.User"></bean>
 </beans>

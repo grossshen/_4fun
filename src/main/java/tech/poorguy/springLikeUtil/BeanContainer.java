@@ -24,7 +24,7 @@ public class BeanContainer {
     }
 
     public static void loadBeanWithAnnotation() {
-        
+
     }
 
     public static Object getBean(String beanId) {

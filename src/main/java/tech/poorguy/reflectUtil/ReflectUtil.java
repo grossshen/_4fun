@@ -1,7 +1,7 @@
 package tech.poorguy.reflectUtil;
 
 import org.w3c.dom.*;
-import tech.poorguy.User;
+import tech.poorguy.bean.User;
 import tech.poorguy.domUtil.DOMUtil;
 
 /**
@@ -27,12 +27,9 @@ public class ReflectUtil {
     }
 
     public static void main(String[] args){
-        Document document = DOMUtil.parse("C:\\work\\tqhy\\_4fun\\src\\main\\java\\Bean.xml");
-        NodeList nodeList = DOMUtil.selectNodeListByTag(document, "bean");
-        Element element = (Element) nodeList.item(0);
-        String className = element.getAttribute("class");
-        User user = (User) initClassWithFullName(className);
-        user.setNickName("max");
-        System.out.println(user.getNickName());
+        String name = ReflectUtil.class.getName();
+        String packageName = ReflectUtil.class.getPackage().getName();
+        System.out.println(name);
+        System.out.println(packageName);
     }
 }
